@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style>
+	/*Main*/
+		main{
+			background: radial-gradient(ellipse, #FF2D8D 20%, #FF6B35 80%);
+			color: #FFFFFF;
+			display: flex;
+	    	flex-wrap: wrap;
+		}
+		main label, input{
+			font-size: 1em;
+		}
+	    main form{
+	    	flex: 3;
+	    	text-align: center;
+	    }
+	    main section{
+	    	flex: 3;
+	    	text-align: center;
+	    }
+	    main label{
+			display: inline-block;
+			min-width: 110px;
+			padding: 1%;
+		}
+		main form h2{
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 3);
+		}
+
+	/*Links*/
+		main a{
+	    text-decoration: underline;
+	    color: blue;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<figure>
+		<img src="img/logo.png" alt="Logo PS">
+	</figure>
+	<h1>Primavera Sound 2027</h1>
+	<form>
+		<label>Usuario:</label>
+			<input type="text" name="usuario" required />
+			<br />
+			<label>Password:</label>
+			<input type="password" name="password" required />
+			<br />
+			<button type="submit">Log In</button>
+	</form>
+</header>
+<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="novedades.html">Novedades</a></li>
+			<li><a href="galeria.html">Galería</a></li>
+			<li><a href="registro.html">Registro</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+</nav>
+<main>
+	<form method="post" autocomplete="off">
+		<h2>Contacto</h2>
+		<h4>¿Tienes alguna duda o sugerencia?
+	    <br /> 
+	    Ponte en contacto con nosotros mediante el siguiente formulario:</h4>
+		<label>Nombre:</label>
+		<input type="text" name="lastname" required />
+		<br />
+		<label>Email:</label>
+		<input type="text" name="mail" pattern="\w{1,}@\w{1,}[.]\w{1,3}" title="ejemplo:mimail@gmail.com" placeholder="Escribe tu Email" required>
+		<br />
+		<label for="opciones">Motivo de la Consulta:</label>
+		<select name="opciones" id="opciones" required>
+            <option value="">Selecciona una opción</option>
+			<option value="info">Información general del festival</option>
+			<option value="entradas">Entradas y abonos</option>
+			<option value="accesibilidad">Accesibilidad</option>
+			<option value="prensa">Acreditaciones y Prensa</option>
+			<option value="quejas">Quejas, sugerencias o reclamaciones</option>
+		</select>
+		<br />
+		<label>Texto de Consulta:</label>
+		<br />
+		<textarea name="detalles" cols="50" rows="10">Indica aquí los detalles...</textarea>
+		<br />
+		<button type="submit">Enviar</button>
+		<button type="reset">Cancelar</button>
+	</form>
+	<section>
+		<h4>Ubícanos en:</h4>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47861.34465222739!2d2.1920073022563433!3d41.43197300609719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a3002c1adb21%3A0x7d9cf77a672a9f48!2sOficinas%20Primavera%20Sound!5e0!3m2!1ses!2ses!4v1784792330332!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+		<h4>Síguenos en:</h4>
+		<a href="https://www.facebook.com/" target="blank">Facebook</a>
+		<br>
+		<a href="https://www.instagram.com/" target="blank">Instagram</a>
+		<br>
+		<a href="https://www.tiktok.com/" target="blank">TikTok</a>
+		<h4>Mail y Teléfono:</h4>
+		<a href="mailto:pssound@gmail.com">Enviar Mail</a>
+	    <br>
+	    <a href="tel:603444134">Realizar Llamada</a>
+		
+	</section>
+</main>
+<footer>
+	<h3>Stay in Touch</h3>
+	<h4>Descubre todas las novedades antes que nadie</h4>
+	<section>
+		<form>
+			<label>Email:</label>
+			<input type="text" name="mail" pattern="\w{1,}@\w{1,}[.]\w{1,3}" title="ejemplo:mimail@gmail.com" placeholder="Escribe tu Email" required>
+			<br />
+			<button type="submit">Enviar</button>
+			<br />
+			<p>*Registrándote estás aceptando la Política de Privacidad.</p>
+		</form>
+	<figure>
+		    <img src="img/logo.png" alt="Logo PS">
+	</figure>
+	</section>
+</footer>
+</body>
+</html>

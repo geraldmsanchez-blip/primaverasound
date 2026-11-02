@@ -1,0 +1,110 @@
+/* Esqueleto*/
+	header,nav,main,footer{
+		border: 1px solid #000;
+		margin: 1%;
+		padding: 1%;
+	}
+
+/* Setting Obligatorio*/
+	figure img{
+		width: 100%;
+	}
+	body{
+	font-family: Helvetica;
+}
+/* Letras y tamaños*/
+	main h2{
+		font-size: 3em;
+		color: #FFFFFF;
+	}
+	main h3{
+		font-size: 2em;
+		color: #FFFFFF;
+	}
+	main p{
+		color: #FFFFFF;
+		font-size: 1.5em;
+		}
+
+/* Encabezado*/
+    header{
+    	display: flex;
+    	flex-wrap: wrap;
+    	background: linear-gradient(135deg, #2E8BFF 0%, #6A1B9A 25%, #D633A5 50%, #FF2D8D 75%, #FF6B35 100%);
+    	align-items: center;
+    }
+    header figure img{
+    	width: 130px;
+    	flex: 1;
+    }
+    header h1{
+    	font-size: 4em;
+    	text-align: center;
+    	color: #FFFFFF;
+    	flex: 6;
+    }
+	header label{
+		flex: 2;
+		display: inline-block;
+		min-width: 110px;
+		padding: 1%;
+		}
+
+/* Menú*/
+
+    a{
+	    text-decoration: none;
+	    color: #FFFFFF;
+	    }
+    nav{
+    	font-weight: bold;
+	    display: flex;
+	    background-color: #FF2D8D;
+    }
+    nav ul{
+    	flex: 4;
+    	text-align: center;
+    }
+
+    nav li{
+	    display: inline-block;
+	    margin-right: 5%;
+    }
+
+    nav ul li a:hover{
+	    color: #6A1B9A;
+	    font-size: 2em;
+	    transition: 1s;
+    }
+
+/* Botón*/
+
+    form button{
+	    background-color: #6A1B9A;
+	    color: #FFFFFF;
+	    margin: 2%;
+	}
+	header form label{
+		color: #FFFFFF;
+	}
+/* Pie de Página*/
+	footer{
+			background-color: #FF6B35;
+	}
+	footer section{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	footer form{
+		flex: 9;
+		min-width: 800px;
+	}
+	footer form p{
+	    font-size: 0.3;
+	    font-style: italic;
+	}
+	footer figure img{
+    	width: 130px;
+    	min-width: 100px;
+    	flex: 1;
+    }
